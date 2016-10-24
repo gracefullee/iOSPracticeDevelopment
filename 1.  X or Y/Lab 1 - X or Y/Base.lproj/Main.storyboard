@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFit" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ic6-vl-OOR">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="66f-fL-WNB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="66f-fL-WNB"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="66f-fL-WNB"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokemonLogo" translatesAutoresizingMaskIntoConstraints="NO" id="NNA-Ue-1nw">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="2LJ-lg-ku3"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="2LJ-lg-ku3"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="2LJ-lg-ku3"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Your Pokemon!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDU-AK-yrm">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b1B-rH-CO1">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardAppearance="light" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="dismissKeyboard:" destination="vXZ-lx-hvc" eventType="editingDidEnd" id="clb-0G-7zI"/>
+                                    <action selector="dismissKeyboard:" destination="vXZ-lx-hvc" eventType="editingDidEndOnExit" id="uCa-Cr-50J"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYK-f1-j5T">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="squirtle">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="squirtleButtonClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vYN-tH-CHd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhW-xx-H6Q">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="pikachu">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pikachuButtonClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="EbS-iQ-aRY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="XDU-AK-yrm" firstAttribute="centerX" secondItem="NNA-Ue-1nw" secondAttribute="centerX" id="2Tv-Cd-LzT"/>
+                            <constraint firstItem="NNA-Ue-1nw" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="72" id="3wd-d5-V76"/>
+                            <constraint firstItem="ic6-vl-OOR" firstAttribute="centerX" secondItem="b1B-rH-CO1" secondAttribute="centerX" id="CaX-0y-8vP"/>
+                            <constraint firstItem="ic6-vl-OOR" firstAttribute="top" secondItem="ZYK-f1-j5T" secondAttribute="bottom" constant="3" id="NLg-pg-4a5"/>
+                            <constraint firstItem="NNA-Ue-1nw" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" symbolic="YES" id="XHC-kj-wtj"/>
+                            <constraint firstItem="ZYK-f1-j5T" firstAttribute="leading" secondItem="rhW-xx-H6Q" secondAttribute="trailing" constant="8" symbolic="YES" id="abB-HU-bE8"/>
+                            <constraint firstItem="rhW-xx-H6Q" firstAttribute="top" secondItem="b1B-rH-CO1" secondAttribute="bottom" constant="42" id="c9F-AR-ud3"/>
+                            <constraint firstItem="b1B-rH-CO1" firstAttribute="top" secondItem="XDU-AK-yrm" secondAttribute="bottom" constant="8" symbolic="YES" id="eLz-W4-Pbu"/>
+                            <constraint firstItem="XDU-AK-yrm" firstAttribute="top" secondItem="NNA-Ue-1nw" secondAttribute="bottom" constant="19" id="f2P-3h-N2b"/>
+                            <constraint firstItem="b1B-rH-CO1" firstAttribute="trailing" secondItem="ic6-vl-OOR" secondAttribute="trailing" id="g3y-7b-5wu"/>
+                            <constraint firstItem="b1B-rH-CO1" firstAttribute="centerX" secondItem="XDU-AK-yrm" secondAttribute="centerX" id="m8M-hz-KbJ"/>
+                            <constraint firstItem="rhW-xx-H6Q" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="22" id="tNF-tF-MTm"/>
+                            <constraint firstItem="ic6-vl-OOR" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="vPY-Rv-uwz"/>
+                            <constraint firstItem="ic6-vl-OOR" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="vQt-V3-4rb"/>
+                            <constraint firstItem="ic6-vl-OOR" firstAttribute="top" secondItem="rhW-xx-H6Q" secondAttribute="bottom" constant="8" symbolic="YES" id="zmI-cW-7Wu"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="ic6-vl-OOR"/>
+                                <exclude reference="NNA-Ue-1nw"/>
+                                <exclude reference="XDU-AK-yrm"/>
+                                <exclude reference="b1B-rH-CO1"/>
+                                <exclude reference="ZYK-f1-j5T"/>
+                                <exclude reference="rhW-xx-H6Q"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="2Tv-Cd-LzT"/>
+                                <exclude reference="f2P-3h-N2b"/>
+                                <exclude reference="eLz-W4-Pbu"/>
+                                <exclude reference="g3y-7b-5wu"/>
+                                <exclude reference="m8M-hz-KbJ"/>
+                                <exclude reference="CaX-0y-8vP"/>
+                                <exclude reference="NLg-pg-4a5"/>
+                                <exclude reference="vPY-Rv-uwz"/>
+                                <exclude reference="vQt-V3-4rb"/>
+                                <exclude reference="zmI-cW-7Wu"/>
+                                <exclude reference="abB-HU-bE8"/>
+                                <exclude reference="c9F-AR-ud3"/>
+                                <exclude reference="tNF-tF-MTm"/>
+                                <exclude reference="3wd-d5-V76"/>
+                                <exclude reference="XHC-kj-wtj"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="ic6-vl-OOR"/>
+                                <include reference="NNA-Ue-1nw"/>
+                                <include reference="XDU-AK-yrm"/>
+                                <include reference="b1B-rH-CO1"/>
+                                <include reference="ZYK-f1-j5T"/>
+                                <include reference="rhW-xx-H6Q"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="2Tv-Cd-LzT"/>
+                                <include reference="f2P-3h-N2b"/>
+                                <include reference="eLz-W4-Pbu"/>
+                                <include reference="g3y-7b-5wu"/>
+                                <include reference="m8M-hz-KbJ"/>
+                                <include reference="CaX-0y-8vP"/>
+                                <include reference="NLg-pg-4a5"/>
+                                <include reference="vPY-Rv-uwz"/>
+                                <include reference="vQt-V3-4rb"/>
+                                <include reference="zmI-cW-7Wu"/>
+                                <include reference="abB-HU-bE8"/>
+                                <include reference="c9F-AR-ud3"/>
+                                <include reference="tNF-tF-MTm"/>
+                                <include reference="3wd-d5-V76"/>
+                                <include reference="XHC-kj-wtj"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="ic6-vl-OOR" id="snY-l3-2Mk"/>
+                        <outlet property="nameTextField" destination="b1B-rH-CO1" id="Xkw-jb-7TF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="379.5" y="315"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pikachu" width="160" height="168"/>
+        <image name="pokemonLogo" width="150" height="55"/>
+        <image name="squirtle" width="160" height="152"/>
+    </resources>
+</document>

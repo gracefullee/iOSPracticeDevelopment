@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Republique</string>
+		<key>image</key>
+		<string>republique.png</string>
+		<key>website</key>
+		<string>http://republiquela.com/</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Sugarfish</string>
+		<key>image</key>
+		<string>sugarfish.png</string>
+		<key>website</key>
+		<string>http://sugarfishsushi.com/</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Providence</string>
+		<key>image</key>
+		<string>providence.png</string>
+		<key>website</key>
+		<string>https://www.providencela.com/</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Fogo de Chão</string>
+		<key>image</key>
+		<string>fogodechao.png</string>
+		<key>website</key>
+		<string>https://www.fogodechao.com/</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Tsujita</string>
+		<key>image</key>
+		<string>tsujita.png</string>
+		<key>website</key>
+		<string>https://www.tsujita-la.com/</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Bottega Louie</string>
+		<key>image</key>
+		<string>bottegalouie.png</string>
+		<key>website</key>
+		<string>https://www.bottegalouie.com/</string>
+	</dict>
+</array>
+</plist>
